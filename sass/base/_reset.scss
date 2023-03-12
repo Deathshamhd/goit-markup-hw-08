@@ -1,0 +1,38 @@
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+  }
+
+*
+{
+  box-sizing: border-box;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+
+  a {
+    text-decoration: none;
+
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &:active {
+      color: var(--accent-color);
+    }
+  }
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+  }

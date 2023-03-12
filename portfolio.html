@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Homework</title>
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="  container header__container">
+        <a href="index.html" class="header__logo">WebStudio</a>
+        <nav>
+          <ul class="header__nav-list">
+            <li class=" header__nav-item">
+              <a href="index.html" class="header__nav-link  "> studio</a>
+            </li>
+            <li class="header__nav-item"><a href="portfolio.html" class="header__nav-link   header__nav-link-current">portfolio</a></li>
+            <li class="header__nav-item"><a href="contacts.html" class=" header__nav-link">contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="header__contact-list">
+          <li class=" header__contact-item">
+            <a href="mailto:info@devstudio.com" class="header__contact-link">
+              <svg class=" header__contact-link-icon" width="16" height="12">
+                <use href="img/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header__contact-item">
+            <a href="tel:+380961111111" class="header__contact-link">
+              <svg class="header__contact-link-icon" width="10" height="16">
+                <use href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              +1 212-772-4150
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="project__section">
+        <div class="container">
+          <h2 class="project__title">Our Projects</h2>
+
+          <!-- BUTTONS LIST -->
+          <ul class="all__button-list">
+            <li class="all__item">
+              <button type="button" class="all__button">All</button>
+            </li>
+            <li class="all__item">
+              <button type="button" class="all__button">Web-sites</button>
+            </li>
+            <li class="all__item">
+              <button type="button" class="all__button">Apps</button>
+            </li>
+            <li class="all__item">
+              <button type="button" class="all__button">Design</button>
+            </li>
+            <li class="all__item">
+              <button type="button" class="all__button">Marketing</button>
+            </li>
+          </ul>
+
+          <!-- PROJECTS LIST -->
+          <ul class="project__list">
+            <li class="project__item">
+              <div class="project__card-overlay">
+              <img src="img/Tenchnoduck.jpg" alt="Tenchnoduck" width="370px" hight="294px" />
+
+
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, aut. Hic odit provident ut mollitia?</p>
+
+
+              </div>
+
+              <div class="project__card-descripion">
+               
+                
+                <h3 class="project__name">Tenchnoduck</h3>
+               <p class="project__job">Web-site</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__card-overlay">
+              <img class="project__image"
+                src="img/Poster-new-orlean-vs-golden-star.jpg"
+                alt="Poster new Orleans vs golden star"
+                width="370px"
+                hight="294px"
+              />
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, aut. Hic odit provident ut mollitia?</p>
+
+              </div>
+              <div class="project__card-descripion">
+                <h3 class="project__name">Poster new orleans vs golden star</h3>
+                <p class="project__job">Design</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__card-overlay">
+              <img
+                src="img/Seafood-Restaurant.jpg"
+                alt="Seafood Restaurant"
+                width="370px"
+                hight="294px"
+              />
+              <p  class="project__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestias cum minus sit perspiciatis asperiores!</p>
+            </div>
+              <div class="project__card-descripion">
+                <h3 class="project__name">Seafood Restaurant</h3>
+                <p class="project__job">Apps</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__card-overlay">
+              <img src="img/Project-prime.jpg" alt="Project prime" width="370px" hight="294px" />
+              <p  class="project__overlay-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ab dolore voluptate id tempore minima!</p>
+              </div>
+              <div class="project__card-descripion">
+                <h3 class="project__name">Project prime</h3>
+                <p class="project__job">Marketing</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__card-overlay">
+              <img src="img/Project-Boxes.jpg" alt="Project Boxes" width="370px" hight="294px" />
+              <p  class="project__overlay-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam fuga laudantium, doloremque impedit minima cum?</p>
+              </div>
+              <div class="project__card-descripion">
+                <h3 class="project__name">Project Boxes</h3>
+                <p class="project__job">Apps</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__card-overlay">
+              <img
+                src="img/Inspiration-has-no-Borders.jpg"
+                alt="Inspiration has no Borders"
+                width="370px"
+                hight="294px"
+              />
+              <p  class="project__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores, similique ab architecto vitae maxime?</p>
+              </div>
+              <div class="project__card-descripion">
+                <h3 class="project__name">Inspiration has no Borders</h3>
+                <p class="project__job">Web-site</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__card-overlay">
+              <img
+                src="img/Limited-Edition.jpg"
+                alt="Limited Edition"
+                width="370px"
+                hight="294px"
+              />
+              <p  class="project__overlay-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro aut ipsum reprehenderit quod velit pariatur.</p>
+              </div>
+              <div class="project__card-descripion">
+                <h3 class="project__name">Limited Edition</h3>
+                <p class="project__job">Design</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__card-overlay">
+              <img src="img/Project-LAB.jpg" alt="Project LAB" width="370px" hight="294px" />
+              <p  class="project__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestias cum minus sit perspiciatis asperiores!</p>
+              </div>
+              <div class="project__card-descripion">
+                <h3 class="project__name">Project LAB</h3>
+                <p class="project__job">Marketing</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__card-overlay">
+              <img
+                src="img/Growing-Business.jpg"
+                alt="Growing-Business"
+                width="370px"
+                hight="294px"
+              />
+              <p  class="project__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestias cum minus sit perspiciatis asperiores!</p>
+              
+              </div>
+              <div class="project__card-descripion">
+                <h3 class="project__name">Growing-Business</h3>
+                <p class="project__job">Apps</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container   footer__container">
+        <div class="footer__left-side">
+          <a href="index.html" class="footer__logo">WebStudio</a>
+          <address class="footer__address-contact">
+            <ul class="footer__address-list">
+              <li class="footer__address-item">
+                <a href="https://goo.gl/maps/CnqDFNbSAixEbh4s5" target="_blank" class="footer__address-map"
+                  >695 Park Ave, New York, NY 10065,<br> United States
+                </a>
+              </li>
+              <li class="footer__address-item">
+                <a href="mailto:info@devstudio.com" class="footer__address-mailto">info@devstudio.com</a>
+              </li>
+              <li class="footer__address-item">
+                <a href="tel:+12127724150 " class="footer__address-tel"> +1212-772-4150</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__middle-side">
+          <h3 class="footer__social-title">Find us on</h3>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-link-icon" width="20" height="16">
+                  <use href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="footer__end-side">
+            <h3>Subscribe to the newsletter</h3>
+            <input type="email" placeholder="E-mail" class="footer__input" required minlength="3"> 
+            <button type="button" class="footer__sub-button"><span class="footer__sub-text">Subscribe</span>
+            <svg class="footer__button-icon">
+              <use href="img/sprite.svg#icon-icon-send"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- model window -->
+     
+      <div class="backdrop  is-hidden" data-modal>
+        <div class="modal__window">
+          <button type="button" class="closed__button" data-modal-close><span class="modal__x-size">&times</span></button> 
+          
+          
+          <p class="modal__text">Leave your information and we'll call you back</p>
+          <div class="modal__from-felid">
+            <label class="modal__label" for="name" >Name </label>
+              
+              <div class="modal__input-wrapper">
+                <input
+                 type="text" 
+                 class="modal__input" 
+                 id="name" 
+                   name="name"  
+                  
+                  minlength="2"
+                   required
+                 />
+                 <svg  class="modal__icon" width="12px" height="12px">
+                  <use href="img/sprite.svg#icon-user"></use>
+                </svg>
+              </div>
+          </div>
+          <div class="modal__from-felid">
+          <label class="modal__label" for="Telephone" >Telephone </label>
+            
+            <div class="modal__input-wrapper">
+              <input
+               type="tel" 
+               class="modal__input" 
+               id="Telephone"  
+               
+               name="Telephone" 
+               minlength="9" 
+               required
+               />
+               <svg  class="modal__icon" width="13px" height="13px">
+                <use href="img/sprite.svg#icon-Telephone"></use>
+              </svg>
+            </div>
+        </div>
+        <div class="modal__from-felid">
+        <label class="modal__label" for="mail">E-mail </label>
+          
+          <div class="modal__input-wrapper">
+            <input
+             type="email" 
+             class="modal__input" 
+             id="mail"  
+            
+             name="mail" 
+             minlength="3" 
+             required
+             />
+             <svg  class="modal__icon" width="15px" height="12px">
+              <use href="img/sprite.svg#icon-mail"></use>
+            </svg>
+          </div>
+      </div>
+      <div class="modal__from-felid">
+        <label for="comments" class="modal__label">Comments</label>
+        <textarea name="comments" id="comments" placeholder="Enter the text" class="modal__comments"></textarea>
+          </div>
+          <div class="modal__from-felid">
+            <input type="checkbox" id="check" name="policy" 
+            class="modal__checkbox  visually-hidden" required/>
+            <label for="modal__check" class="modal__checkbox-text">
+               <span class="modal__checkbox-icon-wrapper">
+                
+                <svg  class="modal__checkbox-icon"  width="14px" height="13px">
+                  <use href="img/sprite.svg#icon-checkmark">
+                    </use>
+                  </svg>
+              </span>
+              I agree with the newsletter and accept the Terms and <br> Conditions
+            </label>
+            </div>
+            <div class="modal__from-button">
+            <button type="button" class="modal__send-button">Send</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    </footer>
+  </body>
+</html>

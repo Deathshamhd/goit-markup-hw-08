@@ -1,0 +1,999 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap);
+body {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: var(--accent-color);
+}
+a:active {
+  color: var(--accent-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.hero__section {
+  background-color: var(--dark-background-color);
+  padding: 200px 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/back-ground-img-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* feature-section*/
+.feature__section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* what-section*/
+.what__section {
+  text-align: center;
+  padding-bottom: 94px;
+}
+
+/* team-section*/
+.team__section {
+  background-color: var(--light-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* customers-section*/
+.customers__section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* project-section*/
+.project__section {
+  display: flex;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --dark-background-color: #2f303a;
+  --light-background-color: #f5f4fa;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636363636;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.hero__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-background-color);
+}
+
+.feature__Call {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.feature__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+  color: var(--primary-text-color);
+}
+
+.feature__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+}
+
+.what__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+}
+
+.what__span {
+  position: absolute;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  width: 100%;
+  color: #FFFFFF;
+  padding: 25px 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.team__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 50px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.team__job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  padding-bottom: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.customers__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: var(--dark-background-color);
+  position: relative;
+}
+
+.footer__address-contact {
+  font-style: normal;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  display: flex;
+}
+
+.footer__middle-side {
+  margin-left: 70px;
+}
+
+.footer__social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-background-color);
+  margin-bottom: 20px;
+}
+
+.footer__end-side {
+  position: absolute;
+  left: 49%;
+  top: 28%;
+}
+.footer__end-side h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.footer__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--dark-background-color);
+  padding: 16px;
+  outline: none;
+  color: var(--accent-color);
+  margin-right: 12px;
+}
+.footer__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__sub-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.all__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.project__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  padding-left: 24px;
+}
+
+.project__card-description {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.project__card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.project__overlay-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5555555556;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.project__job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  padding-left: 24px;
+}
+
+.project__item:hover,
+.project__item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project__item:hover .project__overlay-text,
+.project__item:focus .project__overlay-text {
+  transform: translateY(0%);
+}
+
+.hero__button {
+  font-family: "Roboto";
+  background-color: var(--accent-color);
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--light-background-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__button:hover, .hero__button:focus {
+  color: orange;
+  background-color: red;
+}
+
+/* all-button*/
+.all__button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.all__item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.all__button {
+  font-family: "Roboto";
+  color: var(--primary-text-color);
+  border-radius: 4px;
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  border: none;
+  padding: 6px 26px;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.all__button:hover, .all__button:focus {
+  background-color: var(--accent-color);
+  color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.all__button-current {
+  color: var(--accent-color);
+}
+
+/* footer-button*/
+.footer__sub-button {
+  position: relative;
+  background-color: #2196F3;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.footer__button-icon {
+  position: absolute;
+  left: 79%;
+  top: 32%;
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+/*modal-button*/
+.modal__from-button {
+  position: relative;
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.closed__button {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 1%;
+  right: 1%;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.closed__button:hover, .closed__button:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.modal__send-button {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--light-background-color);
+  border: none;
+}
+.modal__send-button:hover, .modal__send-button:focus {
+  color: orange;
+  background-color: red;
+  cursor: pointer;
+}
+
+.footer__sub-button:hover,
+.footer__sub-button:focus {
+  background-color: orange;
+  color: red;
+}
+
+.header__nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 32px 0;
+  display: block;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus {
+  color: var(--accent-color);
+}
+
+.header__nav-link-current {
+  color: var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
+  border-radius: 2px;
+}
+
+.header__contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.header__contact-link-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+/* team-link*/
+.team__socials-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AFB1B8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__socials-link:hover,
+.team__socials-link:focus {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.team__socials-link-icon {
+  fill: currentColor;
+}
+
+/* customers-link*/
+.customers__item-link {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AFB1B8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers__item-link:hover,
+.customers__item-link:focus {
+  border-color: currentColor;
+  color: #2196F3;
+}
+
+/* footer-link*/
+.footer__social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social-link:hover, .footer__social-link:focus {
+  background-color: var(--accent-color);
+  color: white;
+}
+.footer__social-link-icon {
+  fill: #ffffff;
+}
+
+.header__contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__nav-item:not(:last-child) {
+  padding-right: 57px;
+}
+
+.header__contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+/* feature-list*/
+.feature__list {
+  display: flex;
+}
+
+.feature__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  width: 270px;
+  color: var(--secondary-text-color);
+}
+
+.feature__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature__item-icon-wrapper {
+  background-color: #f5f4fa;
+  padding: 25px 0;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* what-list*/
+.what__list {
+  display: flex;
+}
+
+.what__item {
+  position: relative;
+}
+
+.what__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+/* team-list*/
+.team__list {
+  display: flex;
+}
+
+.team__item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.team__socials-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.team__socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* customers-list*/
+.customers__list {
+  display: flex;
+}
+
+.customers__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers__item-icon {
+  fill: currentColor;
+}
+
+/* button-list*/
+.all__button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.all__item:not(:first-child) {
+  margin-left: 8px;
+}
+
+/*project-list*/
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.project__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(33.3333333333% - 30px);
+  border-radius: 0px 0px 4px 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project__item:hover,
+.project__item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project__item:hover .overlay-text,
+.project__item:focus .overlay-text {
+  transform: translateY(0%);
+}
+
+/* footer-list*/
+.footer__address-item {
+  margin-top: 2px;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__social-list {
+  display: flex;
+}
+
+.footer__social-link-icon {
+  fill: #ffffff;
+}
+
+.header__logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  margin-right: 97px;
+  line-height: 1.1923076923;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.footer__logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923076923;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-bottom: 5px;
+  display: block;
+}
+
+.footer__address-contact {
+  font-style: normal;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  display: flex;
+}
+
+.footer__address-map {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: white;
+  text-align: center;
+}
+
+.footer__address-mailto {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.footer__address-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+/*Model-styles*/
+.modal__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 12px;
+}
+
+.modal__window {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__from-felid {
+  margin-bottom: 10px;
+}
+
+.modal__label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+  margin-bottom: 4px;
+  display: block;
+  margin-top: -1%;
+}
+
+.modal__comments {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  cursor: pointer;
+}
+.modal__comments::placeholder {
+  color: var(--secondary-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+}
+.modal__comments:focus {
+  border-color: var(--accent-color);
+  outline: none;
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+}
+
+.modal__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+  padding: 15px 0 15px 57px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  margin-top: 4px;
+}
+.modal__input::placeholder {
+  color: var(--secondary-text-color);
+}
+.modal__input:hover, .modal__input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+  color: var(--accent-color);
+}
+.modal__input-wrapper {
+  display: block;
+  position: relative;
+}
+
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: var(--primary-text-color);
+}
+
+.modal__input:hover + .modal__icon,
+.modal__input:focus + .modal__icon {
+  fill: var(--accent-color);
+}
+
+/*modal-checkbox*/
+.modal__checkbox-icon-wrapper {
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 14px;
+  margin-bottom: 18px;
+}
+
+.modal__checkbox-icon {
+  fill: white;
+}
+
+.modal__checkbox:checked + .modal__checkbox-text > .modal__checkbox-icon-wrapper {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.modal__checkbox-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  margin-right: 75px;
+  cursor: pointer;
+}
+
+.modal__x-size {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */

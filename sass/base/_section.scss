@@ -1,0 +1,62 @@
+.hero__section {
+  background-color: var(--dark-background-color);
+
+  padding: 200px 0;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/back-ground-img-hero.jpg);
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+}
+/* feature-section*/
+
+.feature__section {
+  padding-top: 94px;
+
+  padding-bottom: 94px;
+}
+
+/* what-section*/
+
+.what__section {
+  text-align: center;
+
+  padding-bottom: 94px;
+}
+
+
+/* team-section*/
+
+.team__section {
+  background-color: var(--light-background-color);
+
+  padding-top: 94px;
+
+  padding-bottom: 94px;
+}
+
+
+/* customers-section*/
+
+.customers__section
+{
+  padding-top: 94px;
+
+  padding-bottom: 94px; 
+}
+
+/* project-section*/
+
+.project__section {
+  display: flex;
+
+  padding-bottom: 94px;
+
+  padding-top: 94px;
+}
+
+

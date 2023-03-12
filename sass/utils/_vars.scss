@@ -1,0 +1,50 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196f3;
+    --dark-background-color: #2f303a;
+    --light-background-color: #f5f4fa;
+  }
+
+  .visually-hidden
+{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+
+.backdrop
+{
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height:100%;
+
+  visibility: visible;
+
+  opacity: 1;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+
+.is-hidden
+{
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+}
